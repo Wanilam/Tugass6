@@ -1,0 +1,1 @@
+cmd /k "C:\Users\62813\tugass6\myenv\Scripts\activate.bat"

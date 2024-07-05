@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    Halaman Checkout
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .checkout-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .checkout-form div {
+            flex: 1;
+            margin: 10px;
+        }
+        .checkout-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .checkout-form input, .checkout-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .checkout-form button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .checkout-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Checkout</h2>
+        <form class="checkout-form">
+            <div>
+                <h3>Informasi Pengiriman</h3>
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Alamat</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="postal-code">Kode Pos</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+
+                <label for="phone">Nomor Telepon</label>
+                <input type="text" id="phone" name="phone" required>
+            
+                              
+            </div>
+        </form>
+        <a href="/pesanan_dikirm"><button>Checkout Sekarang</button></a>
+            
+    </div>
+
+    
+</body>
+</html>
+</html>
+<body>
+    
